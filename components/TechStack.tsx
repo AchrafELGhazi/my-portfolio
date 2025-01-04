@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-
+import Image from 'next/image';
 const techStacks = [
   {
     id: 1,
@@ -101,10 +101,12 @@ const TechStack = ({ className }: { className?: string }) => {
                       className='flex items-center gap-3 p-3 rounded-lg bg-[#10132E] hover:bg-[#161A31] transition-colors group cursor-pointer'
                     >
                       <div className='w-8 h-8 lg:w-10 lg:h-10 rounded-lg bg-[#161A31] group-hover:bg-[#10132E] flex items-center justify-center transition-colors'>
-                        <img
+                        <Image
                           src={skill.icon}
                           alt={skill.name}
                           className='w-5 h-5 lg:w-6 lg:h-6'
+                          width={24}
+                          height={24}
                         />
                       </div>
                       <span className='text-sm lg:text-base font-light text-[#C1C2D3]'>

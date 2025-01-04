@@ -46,9 +46,7 @@ const FloatingDockMobile = ({
     <div className={cn('relative block md:hidden', className)}>
       {' '}
       <AnimatePresence>
-        {' '}
-        // Handles the presence of animations when the component is
-        added/removed from the DOM.
+   
         {open && ( // Conditionally renders the dock if `open` is true.
           <motion.div
             layoutId='nav' // Shared layout animation identifier.

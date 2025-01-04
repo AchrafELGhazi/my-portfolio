@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
 import { cn } from "@/lib/utils";
 
 export const PinContainer = ({
@@ -29,6 +28,7 @@ export const PinContainer = ({
   };
 
   return (
+    
     <div
       className={cn(
         "relative group/pin z-50 w-fit  cursor-pointer",
@@ -37,6 +37,7 @@ export const PinContainer = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
+      <a href={href} target='_blank'></a>
       <div
         style={{
           perspective: "1000px",
@@ -51,6 +52,7 @@ export const PinContainer = ({
           // remove  bg-black
           className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
         >
+          
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>

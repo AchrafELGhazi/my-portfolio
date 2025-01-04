@@ -32,8 +32,8 @@ const Computers = ({ isMobile }) => {
       {/* Render the 3D model */}
       <primitive
         object={computer.scene} // The loaded 3D model
-        scale={isMobile ? 0.5 : 0.62} // Scale based on device type
-        position={isMobile ? [0, 0.2, -2.2] : [0, -1.8, -1.5]} // Position based on device type
+        scale={isMobile ? 0.5 : 0.6} // Scale based on device type
+        position={isMobile ? [0, 0.2, -2.2] : [-1, -1.8, -1.5]} // Position based on device type
         rotation={[-0.01, -0.2, -0.1]} // Slight rotation for better viewing angle
       />
     </mesh>

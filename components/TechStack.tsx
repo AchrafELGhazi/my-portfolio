@@ -38,7 +38,7 @@ const techStacks = [
 
  const TechStack = ({ className }: { className?: string }) => {
   return (
-    <div className={cn('w-full py-10', className)}>
+    <div className={cn('w-full mx-auto max-w-7xl py-10', className)}>
       <h1 className='heading mb-10'>
         My
         <span className='text-purple'> Tech Stack</span>

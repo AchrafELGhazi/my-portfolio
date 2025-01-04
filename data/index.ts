@@ -74,7 +74,7 @@ export const projects = [
     title: 'Kudos - Service Management Platform',
     des: 'Kudos is the main service management platform for the Center for Learning Excellence at Al Akhawayn University. It facilitates session bookings for tutoring, mentoring, and the Writing Center while also serving as a part-time job tracking application for various departments.',
     img: '/kudos.png',
-    iconLists: ['/re.svg', '/ts.svg', '/mongodb.png', '/node.svg'],
+    iconLists: ['/js.png', '/redux.png', '/mongodb.png', '/node.png','/express.png'],
     link: 'https://kudos.aui.ma/',
   },
   {
@@ -82,7 +82,7 @@ export const projects = [
     title: 'Xpress - Feedback Management Platform',
     des: 'Xpress is the official feedback platform of Al Akhawayn University, designed to enhance communication and service quality across departments and services. It empowers over 4,000 students to provide ratings and feedback, ensuring continuous improvement, maintenance, and accountability within the university.',
     img: '/xpress.png',
-    iconLists: ['/re.svg', '/tail.svg', '/mongo.svg', '/node.svg'],
+    iconLists: ['/ts.svg','/react.png', '/tail.svg', '/postgresql.png', '/node.png', '/express.png'],
     link: 'https://express.aui.ma/',
   },
   {
@@ -90,7 +90,7 @@ export const projects = [
     title: 'I.G Blogs - Blogging Platform',
     des: 'I.G Blogs is a feature-rich blogging platform where users can create and share customized blog posts. These posts are visible to multiple users, fostering a vibrant community of readers and writers. The platform includes powerful tools for content creation, personalized themes, and analytics to track engagement.',
     img: '/ig.png',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/firebase.svg'],
+    iconLists: ['/ts.svg', '/tail.svg', '/node.png', '/express.png', '/mongodb.png','/react.png'],
     link: '/ui.igblogs.com',
   },
   {
@@ -98,7 +98,7 @@ export const projects = [
     title: 'Erasmus+ AUI Portal',
     des: 'An engaging and interactive portal for Erasmus+ programs at Al Akhawayn University. This platform highlights academic and volunteering opportunities, serving as a bridge between students and international experiences.',
     img: '/erasmus.png',
-    iconLists: ['/vue.svg', '/tail.svg', '/ts.svg', '/node.svg'],
+    iconLists: ['/next.png', '/tail.svg', '/ts.svg', '/react.png'],
     link: 'https://www.erasmusplusaui.com/',
   },
 ];

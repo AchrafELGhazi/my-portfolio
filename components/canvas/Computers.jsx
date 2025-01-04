@@ -14,14 +14,14 @@ const Computers = ({ isMobile }) => {
     <mesh>
       {/* Add lighting to the scene */}
       {/* hemisphereLight: Creates ambient lighting from above and below */}
-      <hemisphereLight intensity={2.5} groundColor='black' />
+      <hemisphereLight intensity={3} groundColor='black' />
 
       {/* spotLight: Creates a focused beam of light */}
       <spotLight
         position={[-20, 50, 10]} // Position in 3D space (x, y, z)
-        angle={0.12} // Spread angle of the light
-        penumbra={1} // Softness of the light's edges
-        intensity={1} // Brightness of the light
+        angle={0.4} // Spread angle of the light
+        penumbra={2} // Softness of the light's edges
+        intensity={1.5} // Brightness of the light
         castShadow // Enables shadow casting
         shadow-mapSize={1024} // Resolution of the shadows
       />

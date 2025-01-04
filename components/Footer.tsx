@@ -1,17 +1,72 @@
-import { FaLocationArrow } from "react-icons/fa6";
+'use client';
 
-import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
+import { FaLocationArrow } from 'react-icons/fa6';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaHome,
+  FaDownload,
+} from 'react-icons/fa';
+import { socialMedia } from '@/data';
+import MagicButton from './MagicButton';
+import { FloatingDock } from './ui/FloatingDock';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const dockItems = [
+    {
+      title: 'Home',
+      icon: (
+        <FaHome className='w-full h-full text-neutral-500 dark:text-neutral-400' />
+      ),
+      href: '',
+      onClick: scrollToTop,
+    },
+    {
+      title: 'GitHub',
+      icon: (
+        <FaGithub className='w-full h-full text-neutral-500 dark:text-neutral-400' />
+      ),
+      href: 'https://github.com/AchrafELGhazi?tab=overview&from=2025-01-01&to=2025-01-04',
+    },
+    {
+      title: 'LinkedIn',
+      icon: (
+        <FaLinkedin className='w-full h-full text-neutral-500 dark:text-neutral-400' />
+      ),
+      href: 'https://www.linkedin.com/in/achraf-el-ghazi-16b8bb2a7/',
+    },
+    {
+      title: 'Email',
+      icon: (
+        <FaEnvelope className='w-full h-full text-neutral-500 dark:text-neutral-400' />
+      ),
+      href: 'mailto:a.elghazi@aui.ma',
+    },
+    {
+      title: 'Resume',
+      icon: (
+        <FaDownload className='w-full h-full text-neutral-500 dark:text-neutral-400' />
+      ),
+      href: '/Achraf-EL-GHAZI-Resume.pdf',
+    },
+  ];
+
   return (
-    <footer className='w-full pt-20 pb-10' id='contact'>
+    <footer className='w-full pt-20 pb-10 relative' id='contact'>
       {/* background grid */}
       <div className='w-full absolute left-0 -bottom-72 min-h-96'>
         <img
           src='/footer-grid.svg'
           alt='grid'
-          className='w-full h-full opacity-50 '
+          className='w-full h-full opacity-50'
         />
       </div>
 
@@ -32,23 +87,18 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>
-        <p className='md:text-base text-sm md:font-normal font-light'>
+
+      <div className='flex flex-col gap-8 mt-16 items-center'>
+        <p className='md:text-base text-gray-500 text-sm md:font-normal font-light'>
           Copyright © 2025 Achraf EL GHAZI
         </p>
 
-        <div className='flex items-center md:gap-3 gap-6'>
-          {socialMedia.map(info => (
-            <div
-              key={info.id}
-              className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'
-            >
-              <a href={info.link} target='_blank' rel='noopener noreferrer'>
-                <img src={info.img} alt='icons' width={20} height={20} />
-              </a>
-            </div>
-          ))}
-        </div>
+        {/* Static Dock */}
+        <FloatingDock
+          items={dockItems}
+          desktopClassName='relative rounded-full bg-white mx-auto bg-blur '
+          mobileClassName='relative mx-auto'
+        />
       </div>
     </footer>
   );

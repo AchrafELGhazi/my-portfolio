@@ -3,7 +3,7 @@ import { ComputersCanvas } from './canvas';
 
 const AboutMe = () => {
   return (
-    <section className='w-full min-h-screen flex items-center '>
+    <section className='w-full mt-0 lg:mt-5 md:mt-5 min-h-screen flex items-center '>
       <div className='max-w-9xl mx-0 lg:mx-auto md:mx-auto w-full px-1 lg:px-10 md:px-'>
         <div className='flex flex-col lg:flex-row items-center gap-8'>
           {/* Left side content */}

@@ -71,6 +71,7 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    smtitle: 'Kudos',
     title: 'Kudos - Service Management Platform',
     des: 'Kudos is the main service management platform for the Center for Learning Excellence at Al Akhawayn University. It facilitates session bookings for tutoring, mentoring, and the Writing Center while also serving as a part-time job tracking application for various departments.',
     img: '/kudos.png',
@@ -79,6 +80,7 @@ export const projects = [
   },
   {
     id: 2,
+    smtitle: 'Xpress',
     title: 'Xpress - Feedback Management Platform',
     des: 'Xpress is the official feedback platform of Al Akhawayn University, designed to enhance communication and service quality across departments and services. It empowers over 4,000 students to provide ratings and feedback, ensuring continuous improvement, maintenance, and accountability within the university.',
     img: '/xpress.png',
@@ -87,6 +89,7 @@ export const projects = [
   },
   {
     id: 3,
+    smtitle: 'I.G.Blogs',
     title: 'I.G Blogs - Blogging Platform',
     des: 'I.G Blogs is a feature-rich blogging platform where users can create and share customized blog posts. These posts are visible to multiple users, fostering a vibrant community of readers and writers. The platform includes powerful tools for content creation, personalized themes, and analytics to track engagement.',
     img: '/ig.png',
@@ -95,6 +98,7 @@ export const projects = [
   },
   {
     id: 4,
+    smtitle: 'Erasmus+ AUI',
     title: 'Erasmus+ AUI Portal',
     des: 'An engaging and interactive portal for Erasmus+ programs at Al Akhawayn University. This platform highlights academic and volunteering opportunities, serving as a bridge between students and international experiences.',
     img: '/erasmus.png',

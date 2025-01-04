@@ -83,7 +83,7 @@ export const FloatingNav = ({
         opacity: 1,
       }}
       className={cn(
-        'flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-full items-center justify-center space-x-7',
+        'flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 text-gray-500 mx-auto px-10 py-5 rounded-full items-center justify-center space-x-7',
         className
       )}
       style={{
@@ -97,13 +97,15 @@ export const FloatingNav = ({
           key={`desktop-link-${idx}`}
           href={navItem.link}
           className={cn(
-            'relative dark:text-neutral-50 items-center text-gray-100 flex space-x-3 dark:hover:text-neutral-300 hover:text-neutral-500'
+            'relative dark:text-gray-300 items-center text-gray-300 flex space-x-3 dark:hover:text-neutral-300 hover:text-neutral-500'
           )}
         >
           {navItem.icon && (
             <span className='block sm:hidden'>{navItem.icon}</span>
           )}
-          <span className='text-sm !cursor-pointer'>{navItem.name}</span>
+          <span className='text-sm text-gray-400 hover:scale-110 transition-all duration-300 ease-in-out !cursor-pointer'>
+            {navItem.name}
+          </span>
         </Link>
       ))}
     </motion.div>

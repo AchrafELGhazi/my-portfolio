@@ -44,7 +44,9 @@ const techStacks = [
   {
     id: 4,
     category: 'Tools & Others',
-    skills: [{ name: 'Git', icon: '/git.png' }],
+    skills: [{ name: 'Git', icon: '/git.png' },
+      {name:'Sentry',icon:'/sentry.png'},
+    ],
   },
 ];
 

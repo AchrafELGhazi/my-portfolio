@@ -4,8 +4,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const nextConfig = {
-  output: 'export',
-  typescript: {
+  eslint: {
     ignoreBuildErrors: true,
   },
   images: {
